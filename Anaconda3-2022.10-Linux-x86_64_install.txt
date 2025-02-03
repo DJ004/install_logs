@@ -1,0 +1,61 @@
+Anaconda3 will now be installed into this location:
+~/anaconda3
+
+  - Press ENTER to confirm the location
+  - Press CTRL-C to abort the installation
+  - Or specify a different location below
+
+[~/anaconda3] >>> 
+PREFIX=~/anaconda3
+environment location: ~/anaconda3
+
+Preparing transaction: done
+Executing transaction: - 
+
+    Installed package of scikit-learn can be accelerated using scikit-learn-intelex.
+    More details are available here: https://intel.github.io/scikit-learn-intelex
+
+    For example:
+
+        $ conda install scikit-learn-intelex
+        $ python -m sklearnex my_application.py
+.
+.
+.
+.
+.
+
+done
+installation finished.
+Do you wish the installer to initialize Anaconda3
+by running conda init? [yes|no]
+[no] >>> yes
+
+modified      ~/anaconda3/condabin/conda
+modified      ~/anaconda3/bin/conda
+modified      ~/anaconda3/bin/conda-env
+no change     ~/anaconda3/bin/activate
+no change     ~/anaconda3/bin/deactivate
+no change     ~/anaconda3/etc/profile.d/conda.sh
+no change     ~/anaconda3/etc/fish/conf.d/conda.fish
+no change     ~/anaconda3/shell/condabin/Conda.psm1
+no change     ~/anaconda3/shell/condabin/conda-hook.ps1
+no change     ~/anaconda3/lib/python3.9/site-packages/xontrib/conda.xsh
+no change     ~/anaconda3/etc/profile.d/conda.csh
+modified      ~/.bashrc
+
+==> For changes to take effect, close and re-open your current shell. <==
+
+
+
+--------------
+If you prefer conda's base environment to be deactivated on startup, 
+   set the auto_activate_base parameter to false: 
+
+conda config --set auto_activate_base false
+--------------
+
+
+
+Thank you for installing Anaconda3!
+

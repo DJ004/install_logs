@@ -1,0 +1,68 @@
+# --------------------
+# DOWNLOAD AND INSTALL
+# --------------------
+
+sudo apt install apbs
+Downloaded apbsmem from sourceforge, unzipped
+
+# -----
+# USAGE
+# -----
+
+java -jar apbsmem.jar
+- locate MSMS executable upon prompt - available in the apbsmem directory, downloaded from https://ccsb.scripps.edu/msms/download/933/
+- locate /usr/bin/apbs but it should automatically find it if available in your PATH
+
+
+
+##### ATTEMPTS TO INSTALL #####
+
+downloaded local versions of apbs and apbsmem 
+from sourceforge.net and unzipped both. 
+
+APBSMEM requires location of APBS main
+For APBS main, 
+
+conda create -n apbs python=3.10
+conda activate apbs
+pip3 install click mmcif-pdbx numpy pybind11 pyparsing python-dev-tools
+
+
+cat requirements.txt 
+click
+mmcif-pdbx
+numpy
+pybind11
+pyparsing
+python-dev-tools
+
+
+then check if everything is installed:
+conda list | grep click
+conda list | grep mmcif-pdbx 
+conda list | grep numpy
+conda list | grep pybind11
+conda list | grep pyparsing
+conda list | grep python-dev-tools
+conda list | grep numpy
+
+ATTEMPT 1: (FAILED)
+python3 setup.py build
+python3 setup.py install
+
+
+ATTEMPT 2: (FAILED)
+git clone https://github.com/Electrostatics/apbs
+cd apbs
+git submodule init
+git submodule update
+mkdir build
+cd build
+export APBS_BUILD_DIR=`echo $(PWD)`
+cmake ..
+### ERRORS ###
+
+
+ATTEMPT 3: sudo apt install apbs (SUCCESS): stored in /usr/bin/apbs
+
+
